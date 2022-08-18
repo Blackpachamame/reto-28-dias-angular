@@ -1,8 +1,8 @@
 <h1 align="center">Reto de los 28 días con Angular - Dominicode</h1>
 
-Durante los próximos 28 días, cada día te voy a enseñar algo nuevo con Angular.
+Durante los próximos 28 días, cada día te voy a enseñar algo nuevo con Angular. Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](https://www.youtube.com/watch?v=8Fwwhjt3jjE&list=PL_9MDdjVuFjFBed4Eor5qj1T0LLahl4z0).
 
-### Entregas
+## Entregas
 
 1. ¿Qué es Angular? e Instalación Angular CLI
 2. Exploramos Angular APP
@@ -18,7 +18,7 @@ Continuará...
 
 ## Redes Dominicode
 
-- Youtube 📺 - [Blackpachamame](https://www.youtube.com/c/DominiCode)
-- Website 🌎 - [Blackpachamame](https://dominicode.com)
-- Github 📂 - [Blackpachamame](https://github.com/domini-code)
-- Twitch 🎥 - [Blackpachamame](https://www.twitch.tv/dominicode_live)
+- [📺 Youtube](https://www.youtube.com/c/DominiCode)
+- [🌎 Website](https://dominicode.com)
+- [📂 Github](https://github.com/domini-code)
+- [🎥 Twitch](https://www.twitch.tv/dominicode_live)
