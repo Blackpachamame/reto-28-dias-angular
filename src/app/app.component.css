@@ -1,0 +1,22 @@
+.selected {
+  color: white;
+  background-color: red;
+  padding: 10px;
+}
+
+.unSelected {
+  background-color: white;
+  padding: 10px;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.pink {
+  color: pink;
+}
