@@ -26,14 +26,17 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 5. **Enlace de datos bidireccional / On way data binding**
    - Comunicar componentes _(lo veremos en el reto del día 10)_. Enlazar una propiedad que este en nuestro `component.ts` para tenerla en el `component.html` y modificar su valor simultaneamente.
 6. **¿Qué es una directiva? ngIf, ngFor**
+   - Las directivas son una serie de elementos que aplicaremos a nuestro HTML como si fuera un atributo, con el fin de añadir una nuevos comportamientos o estilos al DOM.
    - Las directivas estructurales nos permiten cambiar el comportamiento del DOM.
 7. **¿Qué son las directivas de atributos? ngClass, ngStyle**
    - Las directivas de atributos nos permiten cambiar los estilos del DOM.
 8. **Ciclo de vida de un componente**
 9. **Event binding ó (enlace de eventos)**
    - Nos permite responder a las acciones del usuario.
-
-Continuará...
+10. **Decorador @Input, ¿Qué es un decorador en Angular?**
+    - Los decoradores permiten indicar al framework cómo interpretar un elemento.
+    - Con @input podemos modificar el componente padre y ese cambio se lo comunica al componente hijo.
+11. Continuará...
 
 ## Redes Dominicode
 
