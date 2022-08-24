@@ -35,8 +35,11 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
    - Nos permite responder a las acciones del usuario.
 10. **Decorador @Input, ¿Qué es un decorador en Angular?**
     - Los decoradores permiten indicar al framework cómo interpretar un elemento.
-    - Con @input podemos modificar el componente padre y ese cambio se lo comunica al componente hijo.
-11. Continuará...
+    - Con @Input podemos modificar el componente padre y ese cambio se lo comunica al componente hijo.
+11. **Decorador @Output**
+    - El decorador @Output() en un componente (o directiva) hijo permite que los datos fluyan del hijo al padre.
+    - Cuando usamos el decorador @Input se utiliza `[ ]` para indicarle al componente hijo el valor que se esta pasando, en cambio el decorador @Output utiliza `( )` para capturar el valor emitido y pasrselo al metodo que tiene el componente padre.
+12. Continuará...
 
 ## Redes Dominicode
 
