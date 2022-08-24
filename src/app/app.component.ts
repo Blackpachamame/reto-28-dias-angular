@@ -11,6 +11,10 @@ export class AppComponent {
   selection!: string;
   title = 'Día 9 del reto';
 
+  addNewCity(city: string): void {
+    this.cities.push(city);
+  }
+
   onCityClicked(city: string): void {
     console.log('City ->', city);
     this.selection = city;

@@ -1,0 +1,14 @@
+<form action="">
+    <div class="row align-items-center">
+        <div class="col-auto">
+            <label for="newItem" class="col-form-label">New</label>
+        </div>
+        <div class="col-auto">
+            <!-- Variable de template: #newItem -->
+            <input type="text" class="form-control" id="newItem" #newItem>
+        </div>
+        <div class="col-auto">
+            <button (click)="onAddNewItem(newItem.value)" type="button" class="btn">Add</button>
+        </div>
+    </div>
+</form>
