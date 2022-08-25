@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form-new-item',
@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-new-item.component.css']
 })
 export class FormNewItemComponent {
+  @Input() className = 'btn-primary';
+  @Input() label!: string;
+
+  @Output() newItemEvent = new EventEmitter<string>();
 
   onAddNewItem(item: string): void {
     console.log('Item ->', item);
+    this.newItemEvent.emit(item);
   }
 
 }

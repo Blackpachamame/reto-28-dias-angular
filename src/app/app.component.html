@@ -1,8 +1,9 @@
 <div class="container">
   <div class="row">
     <!-- Col 12 -->
-    <div class="col-md-12">
-      <app-form-new-item></app-form-new-item>
+    <div class="col-md-12 my-3">
+      <app-form-new-item (newItemEvent)="addNewCity($event)" [label]="'City'" [className]="'btn-info'">
+      </app-form-new-item>
     </div>
     <!-- Col 8 -->
     <div class="col-md-8">
