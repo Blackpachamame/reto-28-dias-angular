@@ -8,11 +8,15 @@
     <!-- Col 8 -->
     <div class="col-md-8">
       <ul>
+        <app-cities *ngFor="let city of cities" (cityClickedEvent)="onCityClicked($event)" [city]="city"
+          [selection]="selection"></app-cities>
+      </ul>
+      <!-- <ul>
         <li *ngFor="let city of cities" (click)="onCityClicked(city)"
           [ngClass]="{'alert alert-info': city === selection}">
           {{city}}
         </li>
-      </ul>
+      </ul> -->
     </div>
     <!-- Col 4 -->
     <div class="col-md-4">

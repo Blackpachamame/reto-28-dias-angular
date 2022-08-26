@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FormNewItemComponent } from './components/form-new-item/form-new-item.component';
+import { CitiesComponent } from './components/cities/cities.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    FormNewItemComponent
+    FormNewItemComponent,
+    CitiesComponent
   ],
   imports: [
     BrowserModule,

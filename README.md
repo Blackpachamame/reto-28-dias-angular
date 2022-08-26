@@ -39,7 +39,17 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 11. **Decorador @Output**
     - El decorador @Output() en un componente (o directiva) hijo permite que los datos fluyan del hijo al padre.
     - Cuando usamos el decorador @Input se utiliza `[ ]` para indicarle al componente hijo el valor que se esta pasando, en cambio el decorador @Output utiliza `( )` para capturar el valor emitido y pasárselo al método que tiene el componente padre.
-12. Continuará...
+12. **Mecanismo de detección de cambio Angular (Change Detection)**
+    - El change detection es el mecanismo o estrategia de detección de cambios que utiliza Angular para saber cuando debe actualizar un componente o toda la vista en caso de que la data haya cambiado.
+    - Los cambios pueden producirse por:
+      - Eventos del mouse
+      - Llamadas Ajax
+      - SetInterval
+      - SetTimeOut
+    - Estrategias:
+      - Default: establece la estrategia en CheckAlways
+      - OnPush: establece la estrategia en CheckOnce (bajo demanda)
+13. Continuara...
 
 ## Redes Dominicode
 
