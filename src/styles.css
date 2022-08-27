@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+ul {
+  list-style-type: none;
+}
+
+li {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+li:hover {
+  background-color: rgb(202, 202, 202);
+  color: white;
+}
+
+li.alert {
+  padding: 0.5rem;
+}
+
+li.alert:hover {
+  background-color: #cff4fc;
+  color: black;
+}

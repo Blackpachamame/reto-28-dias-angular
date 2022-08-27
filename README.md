@@ -49,6 +49,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Estrategias:
       - Default: establece la estrategia en CheckAlways
       - OnPush: establece la estrategia en CheckOnce (bajo demanda)
+    - En este día aprendimos a cómo establecer una estrategia en cada componente con un @Input o @Output para que Angular solo renderice ese componente cuando se actualiza, en lugar de renderizar toda la página.
 13. Continuara...
 
 ## Redes Dominicode

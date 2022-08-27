@@ -1,9 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-form-new-item',
   templateUrl: './form-new-item.component.html',
-  styleUrls: ['./form-new-item.component.css']
+  styleUrls: ['./form-new-item.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormNewItemComponent {
   @Input() className = 'btn-primary';
@@ -15,5 +16,4 @@ export class FormNewItemComponent {
     console.log('Item ->', item);
     this.newItemEvent.emit(item);
   }
-
 }

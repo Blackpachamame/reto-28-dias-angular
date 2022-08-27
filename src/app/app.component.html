@@ -11,18 +11,12 @@
         <app-cities *ngFor="let city of cities" (cityClickedEvent)="onCityClicked($event)" [city]="city"
           [selection]="selection"></app-cities>
       </ul>
-      <!-- <ul>
-        <li *ngFor="let city of cities" (click)="onCityClicked(city)"
-          [ngClass]="{'alert alert-info': city === selection}">
-          {{city}}
-        </li>
-      </ul> -->
     </div>
     <!-- Col 4 -->
     <div class="col-md-4">
       <div *ngIf="selection">
         <p>Your city is: {{selection}}</p>
-        <app-button (click)="onClear()" [color]="'blue'" [label]="'Clear'"></app-button>
+        <app-button (click)="onClear()" [label]="'Clear'"></app-button>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ export class AppComponent {
   cities = ['Barcelona', 'Madrid', 'Lima', 'Quito'];
   name!: string;
   selection!: string;
-  title = 'Día 9 del reto';
+  title = 'Día 12 del reto';
 
   addNewCity(city: string): void {
     this.cities.push(city);
@@ -22,5 +22,9 @@ export class AppComponent {
 
   onClear(): void {
     this.selection = '';
+  }
+
+  onSearch(): void {
+    console.log('onSearch');
   }
 }

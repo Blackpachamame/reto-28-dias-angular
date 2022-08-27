@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-cities',
@@ -7,7 +7,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
       [ngClass]="{'alert alert-info': city === selection}">
       {{city}}
    </li>`,
-  styleUrls: ['./cities.component.css']
+  styleUrls: ['./cities.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CitiesComponent {
   @Input() city!: string;
