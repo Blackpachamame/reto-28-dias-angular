@@ -51,6 +51,8 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - En este día aprendimos a cómo establecer una estrategia en cada componente con un @Input o @Output para que Angular solo renderice ese componente cuando se actualiza, en lugar de renderizar toda la página.
 13. **¿Cómo crear un Pipe personalizado en Angular?**
     - Los pipes son una herramienta de Angular que nos permite transformar visualmente la información, por ejemplo, cambiar un texto a mayúsculas o minúsculas, o darle formato de fecha y hora. El valor de la información transformada no cambia, sólo lo hace su aspecto.
+    - Crear un nuevo pipe: `ng generate pipe nombrePipe` o `ng g p nombrePipe`.
+    - También se puede crear dentro de un fichero: `ng g p fichero/nombrePipe`.
 14. Continuara...
 
 ## Redes Dominicode

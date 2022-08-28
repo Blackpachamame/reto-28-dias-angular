@@ -9,7 +9,8 @@ export class AppComponent {
   cities = ['Barcelona', 'Madrid', 'Lima', 'Quito'];
   name!: string;
   selection!: string;
-  title = 'Día 12 del reto';
+  criteria = '';
+  title = 'Día 13 del reto';
 
   addNewCity(city: string): void {
     this.cities.push(city);
