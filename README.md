@@ -1,7 +1,6 @@
 <h1 align="center">Reto de los 28 días con Angular - Dominicode</h1>
 
 Durante los próximos 28 días, cada día te voy a enseñar algo nuevo con Angular.
-
 Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](https://www.youtube.com/watch?v=8Fwwhjt3jjE&list=PL_9MDdjVuFjFBed4Eor5qj1T0LLahl4z0).
 
 ## Entregas y Resumen
@@ -50,7 +49,9 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
       - Default: establece la estrategia en CheckAlways
       - OnPush: establece la estrategia en CheckOnce (bajo demanda)
     - En este día aprendimos a cómo establecer una estrategia en cada componente con un @Input o @Output para que Angular solo renderice ese componente cuando se actualiza, en lugar de renderizar toda la página.
-13. Continuara...
+13. **¿Cómo crear un Pipe personalizado en Angular?**
+    - Los pipes son una herramienta de Angular que nos permite transformar visualmente la información, por ejemplo, cambiar un texto a mayúsculas o minúsculas, o darle formato de fecha y hora. El valor de la información transformada no cambia, sólo lo hace su aspecto.
+14. Continuara...
 
 ## Redes Dominicode
 
