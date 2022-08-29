@@ -1,0 +1,31 @@
+<h1>Contact Form</h1>
+<form>
+    <div class="mb-4">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name " class="form-control">
+        <div class="invalid-feedback">This field is required.</div>
+    </div>
+    <div class="mb-4 form-check">
+        <label for="checkAdult" class="form-label">Are you over 18 years of age?</label>
+        <input type="checkbox" id="checkAdult " class="form-check-input">
+        <div class="invalid-feedback">This field is required.</div>
+    </div>
+    <div class="mb-4">
+        <label for="department" class="form-label">Department</label>
+        <select name="department" id="department" class="form-select form-select-sm">
+            <option selected>Open this select menu</option>
+            <option value="marketing">Marketing</option>
+            <option value="sales">Sales</option>
+            <option value="other">Other</option>
+        </select>
+        <div class="invalid-feedback">This field is required.</div>
+    </div>
+    <div class="mb-4">
+        <label for="comment" class="form-label">Comment</label>
+        <textarea class="form-control" name="comment" id="comment" rows="4" placeholder="Leave a comment..."></textarea>
+        <div class="invalid-feedback">This field is required.</div>
+    </div>
+    <div class="d-grid gap-2 col-4 float-end">
+        <button class="btn btn-info btn-lg">Send</button>
+    </div>
+</form>
