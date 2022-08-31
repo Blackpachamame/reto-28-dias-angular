@@ -53,10 +53,10 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Los pipes son una herramienta de Angular que nos permite transformar visualmente la información, por ejemplo, cambiar un texto a mayúsculas o minúsculas, o darle formato de fecha y hora. El valor de la información transformada no cambia, sólo lo hace su aspecto.
     - Crear un nuevo pipe: `ng generate pipe nombrePipe` o `ng g p nombrePipe`.
     - También se puede crear dentro de un fichero: `ng g p fichero/nombrePipe`.
-14. **Formularios template-driven form**
+14. **Formularios En Angular**
     - Angular nos brinda dos enfoques distintos a la hora de trabajar con formularios:
       - Template-driven forms: Ideales para crear formularios sencillos.
-      - Reactives forms
+      - Reactives forms: Los formularios reactivos son más robustos y escables.
 15. Continuara...
 
 ## Redes Dominicode

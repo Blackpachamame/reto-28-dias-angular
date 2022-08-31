@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -8,6 +8,7 @@ import { FormNewItemComponent } from './components/form-new-item/form-new-item.c
 import { CitiesComponent } from './components/cities/cities.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContactReactiveComponent } from './components/contact-reactive/contact-reactive.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { ContactComponent } from './components/contact/contact.component';
     FormNewItemComponent,
     CitiesComponent,
     FilterPipe,
-    ContactComponent
+    ContactComponent,
+    ContactReactiveComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
