@@ -16,7 +16,7 @@ export class ContactReactiveComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log('Form ->');
+    console.log('Form ->', this.contactForm.value);
   }
 
   initForm(): FormGroup {
