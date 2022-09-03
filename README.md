@@ -57,7 +57,13 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Angular nos brinda dos enfoques distintos a la hora de trabajar con formularios:
       - Template-driven forms: Ideales para crear formularios sencillos.
       - Reactives forms: Los formularios reactivos son más robustos y escables.
-15. Continuara...
+15. **Configuración de rutas**
+    - Se encargan de la navegación de un componente a otro.
+    - Pasan parámetros
+    - Redireccionan
+    - Protegen rutas (guards)
+    - Crear un nuevo componente si exite mas de un módulo: `ng g c components/navbar --module app.module`.
+16. Continuara...
 
 ## Redes Dominicode
 

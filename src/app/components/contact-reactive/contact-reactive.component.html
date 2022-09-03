@@ -3,7 +3,6 @@
     <div class="mb-4">
         <label for="name" class="form-label">Name</label>
         <input type="text" id="name " class="form-control mb-3" name="name" required formControlName="name">
-        <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">This field is required.</div> -->
         <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['required']"
             class="alert alert-danger">This field is required.</div>
         <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.errors?.['minlength']"
@@ -14,7 +13,6 @@
         <label for="checkAdult" class="form-label">Are you over 18 years of age?</label>
         <input type="checkbox" id="checkAdult " class="form-check-input mb-3" name="checkAdult" required
             formControlName="checkAdult">
-        <!-- <div [hidden]="checkAdult.valid || checkAdult.pristine" class="alert alert-danger">This field is required.</div> -->
         <div *ngIf="contactForm.get('checkAdult')?.touched && contactForm.get('checkAdult')?.errors?.['required']"
             class="alert alert-danger">This field is required.</div>
     </div>
@@ -31,7 +29,6 @@
         <label for="comment" class="form-label">Comment</label>
         <textarea class="form-control mb-3" name="comment" id="comment" rows="4" placeholder="Leave a comment..."
             required formControlName="comment"></textarea>
-        <!-- <div [hidden]="comment.valid || comment.pristine" class="alert alert-danger">This field is required.</div> -->
         <div *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.errors?.['required']"
             class="alert alert-danger">This field is required.</div>
     </div>
