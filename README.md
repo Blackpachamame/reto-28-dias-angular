@@ -62,8 +62,9 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Pasan parámetros
     - Redireccionan
     - Protegen rutas (guards)
-    - Crear un nuevo componente si exite mas de un módulo: `ng g c components/navbar --module app.module`.
-16. Continuara...
+    - Crear un nuevo componente si exite mas de un módulo: `ng generate component nombreComponente --module app.module` o `ng g c fichero/nombreComponente --m app`.
+16. **Rutas hijas, párametros y QueryParams**
+17. **Continuara...**
 
 ## Redes Dominicode
 
