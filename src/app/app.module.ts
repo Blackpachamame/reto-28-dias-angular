@@ -13,6 +13,9 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app.routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { UserComponent } from './users/user/user.component';
+import { DetailsComponent } from './users/details/details.component';
+import { ListComponent } from './users/list/list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     ContactReactiveComponent,
     HomeComponent,
     NavbarComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    UserComponent,
+    DetailsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
