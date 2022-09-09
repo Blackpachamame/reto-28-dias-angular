@@ -25,7 +25,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 5. **Enlace de datos bidireccional / On way data binding**
    - Comunicar componentes _(lo veremos en el reto del día 10)_. Enlazar una propiedad que este en nuestro `component.ts` para tenerla en el `component.html` y modificar su valor simultaneamente.
 6. **¿Qué es una directiva? ngIf, ngFor**
-   - Las directivas son una serie de elementos que aplicaremos a nuestro HTML como si fuera un atributo, con el fin de añadir una nuevos comportamientos o estilos al DOM.
+   - Las directivas son una serie de elementos que aplicaremos a nuestro HTML como si fuera un atributo, con el fin de añadir nuevos comportamientos o estilos al DOM.
    - Las directivas estructurales nos permiten cambiar el comportamiento del DOM.
 7. **¿Qué son las directivas de atributos? ngClass, ngStyle**
    - Las directivas de atributos nos permiten cambiar los estilos del DOM.
@@ -64,7 +64,15 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Protegen rutas (guards)
     - Crear un nuevo componente si exite mas de un módulo: `ng generate component nombreComponente --module app.module` o `ng g c fichero/nombreComponente --m app`.
 16. **Rutas hijas, párametros y QueryParams**
-17. **Continuara...**
+17. **Guardianes en Angular (Guards)**
+   - Nos ayudan a proteger una determinada ruta. Se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no.
+   - Crear un nuevo guard: `ng generate guard nombreGuard` o `ng g g fichero/nombreGuard`.
+   - Existen 4 tipos de guards:
+      - CanActivate: Antes de cargar los componentes de la ruta.
+      - CanLoad: Antes de cargar los recursos (assets) de la ruta.
+      - CanDeactivate: Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).
+      - CanActivateChild: Antes de cargar las rutas hijas de la ruta actual.
+18. **Continuara...**
 
 ## Redes Dominicode
 
