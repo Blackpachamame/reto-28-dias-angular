@@ -72,7 +72,12 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
       - CanLoad: Antes de cargar los recursos (assets) de la ruta.
       - CanDeactivate: Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).
       - CanActivateChild: Antes de cargar las rutas hijas de la ruta actual.
-18. **Continuara...**
+18. **¿Para sirve un Resolver en Angular?**
+   - Interface que las clases pueden implementar para ser un proveedor de datos. 
+   - Se debe usar con el router para resolver datos durante la navegación. 
+   - Se debe implementar un método resolve() que se invoca cuando comienza la navegación. 
+   - El router espera a que se resuelvan los datos antes de que finalmente se active la ruta.
+19. **Continuara...**
 
 ## Redes Dominicode
 
