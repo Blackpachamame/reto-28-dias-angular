@@ -6,14 +6,15 @@ import { HomeComponent } from "./components/home/home.component";
 import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.component";
 import { PermissionsGuard } from "./guards/permissions.guard";
 import { WithoutSaveGuard } from "./guards/without-save.guard";
+import { DataResolverService } from "./resolvers/data.resolver.service";
 import { DetailsComponent } from "./users/details/details.component";
 import { ListComponent } from "./users/list/list.component";
 import { UserComponent } from "./users/user/user.component";
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'contact-reactive', component: ContactReactiveComponent, canDeactivate: [WithoutSaveGuard] },
-    { path: 'contact-template/:id', component: ContactComponent },
+    { path: 'contact-reactive', component: ContactReactiveComponent, canDeactivate: [WithoutSaveGuard], resolve: { departments: DataResolverService } },
+    { path: 'contact-template/:id', component: ContactComponent, resolve: { departments: DataResolverService } },
     { path: 'home', component: HomeComponent },
     {
         path: 'users', component: UserComponent, canActivate: [PermissionsGuard],

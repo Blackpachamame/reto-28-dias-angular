@@ -20,9 +20,7 @@
         <label for="department" class="form-label">Department</label>
         <select name="department" id="department" class="form-select form-select-sm" formControlName="department">
             <option selected>Open this select menu</option>
-            <option value="marketing">Marketing</option>
-            <option value="sales">Sales</option>
-            <option value="other">Other</option>
+            <option *ngFor="let department of departments" [value]="department">{{department}}</option>
         </select>
     </div>
     <div class="mb-4">
