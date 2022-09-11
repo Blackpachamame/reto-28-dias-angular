@@ -77,7 +77,9 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
    - Se debe usar con el router para resolver datos durante la navegación. 
    - Se debe implementar un método resolve() que se invoca cuando comienza la navegación. 
    - El router espera a que se resuelvan los datos antes de que finalmente se active la ruta.
-19. **Continuara...**
+19. **Lazy loading**
+   - Retrasa la carga de un módulo hasta que nuestra aplicación lo necesita.
+20. **Continuara...**
 
 ## Redes Dominicode
 
