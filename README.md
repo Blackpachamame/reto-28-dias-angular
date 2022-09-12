@@ -79,7 +79,10 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
    - El router espera a que se resuelvan los datos antes de que finalmente se active la ruta.
 19. **Lazy loading**
    - Retrasa la carga de un módulo hasta que nuestra aplicación lo necesita.
-20. **Continuara...**
+20. **forRoot & forChild**
+   - forRoot: Se utiliza para poner todas las rutas en el modulo principal (raiz).
+   - forChild: Se utiliza bajo demanda (lazy loading).
+21. **Continuara...**
 
 ## Redes Dominicode
 
