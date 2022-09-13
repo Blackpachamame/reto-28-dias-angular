@@ -17,13 +17,17 @@ export class HomeComponent {
     this.cities.push(city);
   }
 
-  onCityClicked(city: string): void {
+  onCitySelected(city: string): void {
     console.log('City ->', city);
     this.selection = city;
   }
 
   onClear(): void {
     this.selection = '';
+  }
+
+  onCityDelete(id: string): void {
+    console.log('id', id);
   }
 
 }

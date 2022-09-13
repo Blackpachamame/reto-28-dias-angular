@@ -12,10 +12,8 @@
         <hr>
         <!-- List Cities -->
         <div class="col-md-8">
-            <ul>
-                <app-cities *ngFor="let city of (cities | filter:criteria)" (cityClickedEvent)="onCityClicked($event)"
-                    [city]="city" [selection]="selection"></app-cities>
-            </ul>
+            <app-cities *ngFor="let city of (cities | filter:criteria)" (cityDeleteEvent)="onCityDelete($event)"
+                (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
         </div>
         <!-- Clear selection -->
         <div class="col-md-4">

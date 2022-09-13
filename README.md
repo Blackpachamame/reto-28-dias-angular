@@ -82,7 +82,10 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 20. **forRoot & forChild**
    - forRoot: Se utiliza para poner todas las rutas en el modulo principal (raiz).
    - forChild: Se utiliza bajo demanda (lazy loading).
-21. **Continuara...**
+21. **¿Cómo hacer una peticion HTTP en Angular? CRUD**
+   - HttpClient es un cliente con los verbos REST, y está basado en Observables.
+   - Crear un nuevo servicio: `ng generate service unServicio` o `ng g s unServicio`.
+22. **Continuara...**
 
 ## Redes Dominicode
 
