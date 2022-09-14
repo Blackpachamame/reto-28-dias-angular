@@ -1,33 +1,46 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { City, DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  cities = ['Barcelona', 'Madrid', 'Lima', 'Quito'];
-  name!: string;
-  selection!: string;
+  cities: City[] = [];
+  selection!: City;
   criteria = '';
-  title = 'Día 15 del reto';
+
+  constructor(private readonly dataSVc: DataService) { }
+
+  ngOnInit(): void {
+    this.dataSVc.getCities().subscribe(cities => {
+      this.cities = [...cities];
+    })
+  }
 
   addNewCity(city: string): void {
-    this.cities.push(city);
+    // Enviamos a la api nuestra nueva ciudad
+    this.dataSVc.addNewCity(city).subscribe(res => {
+      // La respuesta de la api la añadimos a nuestro array de cities
+      this.cities.push(res);
+    })
   }
 
-  onCitySelected(city: string): void {
-    console.log('City ->', city);
+  onCitySelected(city: City): void {
     this.selection = city;
-  }
-
-  onClear(): void {
-    this.selection = '';
   }
 
   onCityDelete(id: string): void {
     console.log('id', id);
+  }
+
+  onClear(): void {
+    this.selection = {
+      _id: '',
+      name: ''
+    };
   }
 
 }

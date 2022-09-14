@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { City } from '../services/data.service';
 
 @Pipe({
   name: 'filter'
@@ -6,14 +7,14 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class FilterPipe implements PipeTransform {
 
-  transform(values: string[], arg: string): string[] {
+  transform(cities: City[], arg: string): City[] {
     // Empieza a buscar desde que escribo 3 argumentos en el filtro
-    if (!arg || arg?.length < 3) return values;
+    if (!arg || arg?.length < 3) return cities;
+    let result: City[] = [];
 
-    let result: string[] = [];
-    for (const value of values) {
-      if (value.toLocaleLowerCase().indexOf(arg.toLocaleLowerCase()) > -1) {
-        result = [...result, value];
+    for (const city of cities) {
+      if (city.name.toLocaleLowerCase().indexOf(arg.toLocaleLowerCase()) > -1) {
+        result = [...result, city];
       }
     }
     return result;

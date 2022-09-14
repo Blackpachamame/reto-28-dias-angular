@@ -2,7 +2,8 @@
     <div class="row">
         <!-- Add City -->
         <div class="col-md-6 my-3">
-            <app-form-new-item (newItemEvent)="addNewCity($event)" [label]="'City'" [className]="'btn-info'">
+            <app-form-new-item [selection]="selection" (newItemEvent)="addNewCity($event)" [label]="'City'"
+                [className]="'btn-info'">
             </app-form-new-item>
         </div>
         <!-- Filter -->

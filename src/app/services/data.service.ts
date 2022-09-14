@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 export interface City {
   _id: string;
@@ -11,7 +12,7 @@ export interface City {
   providedIn: 'root'
 })
 export class DataService {
-  private readonly API = '';
+  private readonly API = environment.api;
 
   constructor(private readonly http: HttpClient) { }
 

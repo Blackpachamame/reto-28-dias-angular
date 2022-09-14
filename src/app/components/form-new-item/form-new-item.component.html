@@ -5,7 +5,7 @@
         </div>
         <div class="col-auto">
             <!-- Variable de template: #newItem -->
-            <input type="text" class="form-control" id="newItem" #newItem>
+            <input type="text" class="form-control" id="newItem" name="newItem" [ngModel]="selection" #newItem>
         </div>
         <div class="col-auto">
             <button (click)="onAddNewItem(newItem.value)" type="button" class="btn" [ngClass]="[className]">Add
