@@ -2,8 +2,8 @@
     <div class="row">
         <!-- Add City -->
         <div class="col-md-6 my-3">
-            <app-form-new-item [selection]="selection" (newItemEvent)="addNewCity($event)" [label]="'City'"
-                [className]="'btn-info'">
+            <app-form-new-item [selection]="selection" (updateItemEvent)="updateCity($event)"
+                (newItemEvent)="addNewCity($event)" [label]="'City'" [className]="'btn-info'">
             </app-form-new-item>
         </div>
         <!-- Filter -->
@@ -18,8 +18,8 @@
         </div>
         <!-- Clear selection -->
         <div class="col-md-4">
-            <div *ngIf="selection">
-                <p>Your city is: {{selection}}</p>
+            <div *ngIf="selection?.name">
+                <p>Your city is: {{selection?.name}}</p>
                 <app-button (click)="onClear()" [label]="'Clear'"></app-button>
             </div>
         </div>

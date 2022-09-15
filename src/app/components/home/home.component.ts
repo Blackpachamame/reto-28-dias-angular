@@ -20,6 +20,14 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  updateCity(city: City): void {
+    this.dataSVc.updateCity(city).subscribe(res => {
+      const tempArr = this.cities.filter(item => item._id !== city._id);
+      this.cities = [...tempArr, city];
+      this.onClear();
+    })
+  }
+
   addNewCity(city: string): void {
     // Enviamos a la api nuestra nueva ciudad
     this.dataSVc.addNewCity(city).subscribe(res => {
@@ -33,7 +41,13 @@ export class HomeComponent implements OnInit {
   }
 
   onCityDelete(id: string): void {
-    console.log('id', id);
+    if (confirm('Are you sure?')) {
+      this.dataSVc.deleteCity(id).subscribe(() => {
+        const tempArr = this.cities.filter(city => city._id !== id);
+        this.cities = [...tempArr];
+        this.onClear();
+      })
+    }
   }
 
   onClear(): void {

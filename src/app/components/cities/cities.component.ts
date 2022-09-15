@@ -8,9 +8,12 @@ import { City } from 'src/app/services/data.service';
   <li class="list-group-item mt-1 d-flex justify-content-between align-items-center" (click)="onCitySelected(city)"
       [ngClass]="{'active': city?._id === selection?._id}">
       {{city?.name | titlecase}}
-        <button type="button" 
+        <button 
+        *ngIf="city?._id === selection?._id"
+        type="button" 
         class="btn btn-danger"
-        (click)="onCityDelete(city._id)">Delete</button>
+        (click)="onCityDelete(city._id)">Delete
+      </button>
    </li>
    </ul>`,
   styleUrls: ['./cities.component.css'],
