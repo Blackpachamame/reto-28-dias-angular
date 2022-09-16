@@ -16,6 +16,7 @@ import { UserComponent } from './users/user/user.component';
 import { DetailsComponent } from './users/details/details.component';
 import { ListComponent } from './users/list/list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     PagenotfoundComponent,
     UserComponent,
     DetailsComponent,
-    ListComponent
+    ListComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

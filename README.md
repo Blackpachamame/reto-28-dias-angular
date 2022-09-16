@@ -85,7 +85,9 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 21. **¿Cómo hacer una peticion HTTP en Angular? CRUD**
    - HttpClient es un cliente con los verbos REST, y está basado en Observables.
    - Crear un nuevo servicio: `ng generate service unServicio` o `ng g s unServicio`.
-22. **Continuara...**
+22. **HTTP Interceptor**
+   - Interceptar peticiones HTTP para modificarla.
+23. **Continuara...**
 
 ## Redes Dominicode
 
