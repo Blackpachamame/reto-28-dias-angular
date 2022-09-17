@@ -86,7 +86,8 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
    - HttpClient es un cliente con los verbos REST, y está basado en Observables.
    - Crear un nuevo servicio: `ng generate service unServicio` o `ng g s unServicio`.
 22. **HTTP Interceptor**
-   - Interceptar peticiones HTTP para modificarla.
+   - Interceptar peticiones HTTP para modificarlas.
+   - Crear un nuevo interceptor: `ng generate interceptor nombreInterceptor` o `ng g interceptor unFichero/nombreInterceptor` (El aliad "i" es para interface).
 23. **Continuara...**
 
 ## Redes Dominicode
