@@ -88,7 +88,19 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 22. **HTTP Interceptor**
    - Interceptar peticiones HTTP para modificarlas.
    - Crear un nuevo interceptor: `ng generate interceptor nombreInterceptor` o `ng g interceptor unFichero/nombreInterceptor` (El aliad "i" es para interface).
-23. **Continuara...**
+23. **¿Qué es un Observable? Diferencias entre Promesa y Observable**
+   - Los Observables son colecciones o secuencias de eventos continuos ordenados en el tiempo.
+   - Programación Reactiva: La es programación orientada al manejo de streams de datos asíncronos y la propagación de los cambio.
+   - Promesa:
+      - Se ejecuta inmediatamente
+      - Emite un solo valor
+      - Envía los errores a la promesa hija
+      - Usa la cláusula `.then()`
+    - Observable:
+      - No comienza hasta la suscripción
+      - Múltiples valores a lo largo del tiempo
+      - Proporciona operadores
+24. **Continuara...**
 
 ## Redes Dominicode
 
