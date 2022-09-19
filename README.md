@@ -100,7 +100,10 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
          - No comienza hasta la suscripción
          - Múltiples valores a lo largo del tiempo
          - Proporciona operadores
-24. **Continuara...**
+24. **Content Project en Angular (proyección de contenido en Angular)**
+      - La proyección de contenido es un patrón en el que inserta o proyecta el contenido que desea usar dentro de otro componente.
+      - Por ejemplo, podría tener un componente Tarjeta que acepte contenido proporcionado por otro componente.
+25. **Continuara...**
 
 ## Redes Dominicode
 

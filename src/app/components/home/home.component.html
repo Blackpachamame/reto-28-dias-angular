@@ -16,6 +16,22 @@
             <app-cities *ngFor="let city of (cities | filter:criteria)" (cityDeleteEvent)="onCityDelete($event)"
                 (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
         </div>
+        <!-- Cards Content Project -->
+        <hr>
+        <app-card>
+            <div card-header>Soy header 1</div>
+            <div card-body>Soy body 1</div>
+        </app-card>
+        <hr>
+        <app-card>
+            <div card-header>Soy header 2</div>
+            <div card-body>Soy body 2</div>
+        </app-card>
+        <hr>
+        <app-card>
+            <div card-header>Soy header 3</div>
+            <div card-body>Soy body 3</div>
+        </app-card>
         <!-- Clear selection -->
         <div class="col-md-4">
             <div *ngIf="selection?.name">
