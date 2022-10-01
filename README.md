@@ -103,7 +103,14 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 24. **Content Project en Angular (proyección de contenido en Angular)**
       - La proyección de contenido es un patrón en el que inserta o proyecta el contenido que desea usar dentro de otro componente.
       - Por ejemplo, podría tener un componente Tarjeta que acepte contenido proporcionado por otro componente.
-25. **Continuara...**
+25. **Elementos ng-container & ng-template**
+      - NG-TEMPLATE:
+         - El elemento ng-template de Angular define una plantilla que no se representa de forma predeterminada.
+         - Puede definir el contenido de la plantilla que Angular solo representa cuando usted, directa o indirectamente, le indica específicamente que lo haga, lo que le permite tener un control total sobre cómo y cuándo se muestra el contenido.
+      - NG-CONTAINER:
+         - Un elemento especial que puede contener directivas estructurales sin agregar nuevos elementos al DOM.
+         - Nos permite usar directivas estructurales sin ningún elemento adicional, asegurándonos de que los únicos cambios de DOM que se aplican son los dictados por las propias directivas.
+26. **Continuara...**
 
 ## Redes Dominicode
 
