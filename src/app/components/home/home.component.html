@@ -13,8 +13,10 @@
         <hr>
         <!-- List Cities -->
         <div class="col-md-8">
-            <app-cities *ngFor="let city of (cities | filter:criteria)" (cityDeleteEvent)="onCityDelete($event)"
-                (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
+            <ng-container *ngIf="cities.length > 1; else templateEmpty">
+                <app-cities *ngFor="let city of (cities | filter:criteria)" (cityDeleteEvent)="onCityDelete($event)"
+                    (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
+            </ng-container>
         </div>
         <!-- Cards Content Project -->
         <hr>
@@ -34,10 +36,14 @@
         </app-card>
         <!-- Clear selection -->
         <div class="col-md-4">
-            <div *ngIf="selection?.name">
+            <ng-container *ngIf="selection?.name">
                 <p>Your city is: {{selection?.name}}</p>
                 <app-button (click)="onClear()" [label]="'Clear'"></app-button>
-            </div>
+            </ng-container>
         </div>
+
+        <ng-template #templateEmpty>
+            We dont have cities xd
+        </ng-template>
     </div>
 </div>
