@@ -110,7 +110,34 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
       - NG-CONTAINER:
          - Un elemento especial que puede contener directivas estructurales sin agregar nuevos elementos al DOM.
          - Nos permite usar directivas estructurales sin ningún elemento adicional, asegurándonos de que los únicos cambios de DOM que se aplican son los dictados por las propias directivas.
-26. **Continuara...**
+26. **ViewChild**
+      - Es un decorador de propiedades que configura una consulta de vista.
+      - El detector busca el primer elemento o directiva que coincida con el selector en la vista (DOM).
+      - Si el DOM cambia y un elemento secundario nuevo coincide con el selector, la propiedad se actualiza.
+27. **Continuara...**
+
+## Otros Datos
+
+- **API CrudCrud:** El enlace a esta API debe actualizarse diariamente ya que es la versión gratuita. Para esto, vamos a la página [CrudCrud](https://crudcrud.com) y copiamos el nuevo enlace. Luego reemplazamos en enlace anterior en nuestro archivo `environment.ts`.
+
+- **Advertencia Molesta:**
+
+```warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.```
+
+- **Solución:**
+
+```
+"angularCompilerOptions": {
+    "extendedDiagnostics": {
+      "checks": {
+        "optionalChainNotNullable": "suppress"
+      }
+    }
+  }
+```
+
+- [Documentación](https://angular.io/extended-diagnostics#configuration)
+- [Solución encontrada en github](https://github.com/angular/angular/issues/46918)
 
 ## Redes Dominicode
 

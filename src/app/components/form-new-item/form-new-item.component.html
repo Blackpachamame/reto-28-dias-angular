@@ -8,11 +8,11 @@
             <input type="text" class="form-control" id="newItem" name="newItem" [ngModel]="selection?.name" #newItem>
         </div>
         <div class="col-auto">
-            <button *ngIf="!selection?.name" (click)="onAddNewItem(newItem.value); newItem.value = ''" type="button"
-                class="btn" [ngClass]="[className]">Add
+            <button *ngIf="!selection?.name" (click)="onAddNewItem()" type="button" class="btn"
+                [ngClass]="[className]">Add
                 {{label}}</button>
-            <button *ngIf="selection?.name" (click)="onUpdateItem(selection, newItem.value); newItem.value = ''"
-                type="button" class="btn" [ngClass]="[className]">Update
+            <button *ngIf="selection?.name" (click)="onUpdateItem()" type="button" class="btn"
+                [ngClass]="[className]">Update
                 {{label}}</button>
         </div>
     </div>
