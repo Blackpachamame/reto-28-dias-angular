@@ -114,7 +114,13 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
       - Es un decorador de propiedades que configura una consulta de vista.
       - El detector busca el primer elemento o directiva que coincida con el selector en la vista (DOM).
       - Si el DOM cambia y un elemento secundario nuevo coincide con el selector, la propiedad se actualiza.
-27. **Continuara...**
+27. **Comunicación entre componentes con Observables**
+      - Subject: es un tipo de observable especial, que nos permite realizar diversas tareas.
+      - BehaviorSubject:
+         - Requiere un valor por defecto.
+         - Devuelve el último valor, inmediatamente hay una suscripción.
+         - Podemos recuperar el último valor emitido con el getValue().
+28. **Continuara...**
 
 ## Otros Datos
 
