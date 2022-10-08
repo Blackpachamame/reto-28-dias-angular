@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://crudcrud.com/api/749b03ec46bc45cc94e69fad49601c5d/cities'
+  api: 'https://crudcrud.com/api/c406842b7d1e4440a88e18b6081cd4a8/cities'
 };
 
 /*
