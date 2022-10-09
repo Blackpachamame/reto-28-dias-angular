@@ -65,62 +65,62 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Crear un nuevo componente si exite mas de un módulo: `ng generate component nombreComponente --module app.module` o `ng g c fichero/nombreComponente --m app`.
 16. **Rutas hijas, párametros y QueryParams**
 17. **Guardianes en Angular (Guards)**
-      - Nos ayudan a proteger una determinada ruta. Se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no.
-      - Crear un nuevo guard: `ng generate guard nombreGuard` o `ng g g fichero/nombreGuard`.
-      - Existen 4 tipos de guards:
-         - CanActivate: Antes de cargar los componentes de la ruta.
-         - CanLoad: Antes de cargar los recursos (assets) de la ruta.
-         - CanDeactivate: Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).
-         - CanActivateChild: Antes de cargar las rutas hijas de la ruta actual.
+    - Nos ayudan a proteger una determinada ruta. Se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no.
+    - Crear un nuevo guard: `ng generate guard nombreGuard` o `ng g g fichero/nombreGuard`.
+    - Existen 4 tipos de guards:
+      - CanActivate: Antes de cargar los componentes de la ruta.
+      - CanLoad: Antes de cargar los recursos (assets) de la ruta.
+      - CanDeactivate: Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).
+      - CanActivateChild: Antes de cargar las rutas hijas de la ruta actual.
 18. **¿Para sirve un Resolver en Angular?**
-      - Interface que las clases pueden implementar para ser un proveedor de datos. 
-      - Se debe usar con el router para resolver datos durante la navegación. 
-      - Se debe implementar un método resolve() que se invoca cuando comienza la navegación. 
-      - El router espera a que se resuelvan los datos antes de que finalmente se active la ruta.
+    - Interface que las clases pueden implementar para ser un proveedor de datos.
+    - Se debe usar con el router para resolver datos durante la navegación.
+    - Se debe implementar un método resolve() que se invoca cuando comienza la navegación.
+    - El router espera a que se resuelvan los datos antes de que finalmente se active la ruta.
 19. **Lazy loading**
-      - Retrasa la carga de un módulo hasta que nuestra aplicación lo necesita.
+    - Retrasa la carga de un módulo hasta que nuestra aplicación lo necesita.
 20. **forRoot & forChild**
-      - forRoot: Se utiliza para poner todas las rutas en el modulo principal (raiz).
-      - forChild: Se utiliza bajo demanda (lazy loading).
+    - forRoot: Se utiliza para poner todas las rutas en el modulo principal (raiz).
+    - forChild: Se utiliza bajo demanda (lazy loading).
 21. **¿Cómo hacer una peticion HTTP en Angular? CRUD**
-      - HttpClient es un cliente con los verbos REST, y está basado en Observables.
-      - Crear un nuevo servicio: `ng generate service unServicio` o `ng g s unServicio`.
+    - HttpClient es un cliente con los verbos REST, y está basado en Observables.
+    - Crear un nuevo servicio: `ng generate service unServicio` o `ng g s unServicio`.
 22. **HTTP Interceptor**
-      - Interceptar peticiones HTTP para modificarlas.
-      - Crear un nuevo interceptor: `ng generate interceptor nombreInterceptor` o `ng g interceptor unFichero/nombreInterceptor` (El aliad "i" es para interface).
+    - Interceptar peticiones HTTP para modificarlas.
+    - Crear un nuevo interceptor: `ng generate interceptor nombreInterceptor` o `ng g interceptor unFichero/nombreInterceptor` (El aliad "i" es para interface).
 23. **¿Qué es un Observable? Diferencias entre Promesa y Observable**
-      - Los Observables son colecciones o secuencias de eventos continuos ordenados en el tiempo.
-      - Programación Reactiva: La es programación orientada al manejo de streams de datos asíncronos y la propagación de los cambio.
-      - Promesa:
-         - Se ejecuta inmediatamente
-         - Emite un solo valor
-         - Envía los errores a la promesa hija
-         - Usa la cláusula `.then()`
-      - Observable:
-         - No comienza hasta la suscripción
-         - Múltiples valores a lo largo del tiempo
-         - Proporciona operadores
+    - Los Observables son colecciones o secuencias de eventos continuos ordenados en el tiempo.
+    - Programación Reactiva: La es programación orientada al manejo de streams de datos asíncronos y la propagación de los cambio.
+    - Promesa:
+      - Se ejecuta inmediatamente
+      - Emite un solo valor
+      - Envía los errores a la promesa hija
+      - Usa la cláusula `.then()`
+    - Observable:
+      - No comienza hasta la suscripción
+      - Múltiples valores a lo largo del tiempo
+      - Proporciona operadores
 24. **Content Project en Angular (proyección de contenido en Angular)**
-      - La proyección de contenido es un patrón en el que inserta o proyecta el contenido que desea usar dentro de otro componente.
-      - Por ejemplo, podría tener un componente Tarjeta que acepte contenido proporcionado por otro componente.
+    - La proyección de contenido es un patrón en el que inserta o proyecta el contenido que desea usar dentro de otro componente.
+    - Por ejemplo, podría tener un componente Tarjeta que acepte contenido proporcionado por otro componente.
 25. **Elementos ng-container & ng-template**
-      - NG-TEMPLATE:
-         - El elemento ng-template de Angular define una plantilla que no se representa de forma predeterminada.
-         - Puede definir el contenido de la plantilla que Angular solo representa cuando usted, directa o indirectamente, le indica específicamente que lo haga, lo que le permite tener un control total sobre cómo y cuándo se muestra el contenido.
-      - NG-CONTAINER:
-         - Un elemento especial que puede contener directivas estructurales sin agregar nuevos elementos al DOM.
-         - Nos permite usar directivas estructurales sin ningún elemento adicional, asegurándonos de que los únicos cambios de DOM que se aplican son los dictados por las propias directivas.
+    - NG-TEMPLATE:
+      - El elemento ng-template de Angular define una plantilla que no se representa de forma predeterminada.
+      - Puede definir el contenido de la plantilla que Angular solo representa cuando usted, directa o indirectamente, le indica específicamente que lo haga, lo que le permite tener un control total sobre cómo y cuándo se muestra el contenido.
+    - NG-CONTAINER:
+      - Un elemento especial que puede contener directivas estructurales sin agregar nuevos elementos al DOM.
+      - Nos permite usar directivas estructurales sin ningún elemento adicional, asegurándonos de que los únicos cambios de DOM que se aplican son los dictados por las propias directivas.
 26. **ViewChild**
-      - Es un decorador de propiedades que configura una consulta de vista.
-      - El detector busca el primer elemento o directiva que coincida con el selector en la vista (DOM).
-      - Si el DOM cambia y un elemento secundario nuevo coincide con el selector, la propiedad se actualiza.
+    - Es un decorador de propiedades que configura una consulta de vista.
+    - El detector busca el primer elemento o directiva que coincida con el selector en la vista (DOM).
+    - Si el DOM cambia y un elemento secundario nuevo coincide con el selector, la propiedad se actualiza.
 27. **Comunicación entre componentes con Observables**
-      - Subject: es un tipo de observable especial, que nos permite realizar diversas tareas.
-      - BehaviorSubject:
-         - Requiere un valor por defecto.
-         - Devuelve el último valor, inmediatamente hay una suscripción.
-         - Podemos recuperar el último valor emitido con el getValue().
-28. **Continuara...**
+    - Subject: es un tipo de observable especial, que nos permite realizar diversas tareas.
+    - BehaviorSubject:
+      - Requiere un valor por defecto.
+      - Devuelve el último valor, inmediatamente hay una suscripción.
+      - Podemos recuperar el último valor emitido con el getValue().
+28. **Configurar eslint y prettier en Angular**
 
 ## Otros Datos
 
@@ -128,7 +128,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 
 - **Advertencia Molesta:**
 
-```warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.```
+`warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.`
 
 - **Solución:**
 
