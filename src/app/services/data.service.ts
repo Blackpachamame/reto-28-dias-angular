@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -10,11 +11,11 @@ export interface City {
 
 const initCity: City = {
   _id: '',
-  name: ''
-}
+  name: '',
+};
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
   private city$ = new BehaviorSubject<City>(initCity);

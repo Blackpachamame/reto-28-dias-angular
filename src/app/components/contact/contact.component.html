@@ -1,34 +1,43 @@
-<h1>Contact Form - UserId {{id}}</h1>
+<!-- eslint-disable prettier/prettier -->
+<h1>Contact Form - UserId {{ id }}</h1>
 <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-    <div class="mb-4">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" id="name " class="form-control mb-3" name="name" [(ngModel)]="model.name" #name="ngModel"
-            required>
-        <div [hidden]="name.valid || name.pristine" class="alert alert-danger">This field is required.</div>
+  <div class="mb-4">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" id="name " class="form-control mb-3" name="name" [(ngModel)]="model.name" #name="ngModel"
+      required />
+    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+      This field is required.
     </div>
-    <div class="mb-4 form-check">
-        <label for="checkAdult" class="form-label">Are you over 18 years of age?</label>
-        <input type="checkbox" id="checkAdult " class="form-check-input mb-3" name="checkAdult"
-            [(ngModel)]="model.checkAdult" #checkAdult="ngModel" required>
-        <div [hidden]="checkAdult.valid || checkAdult.pristine" class="alert alert-danger">This field is required.</div>
+  </div>
+  <div class="mb-4 form-check">
+    <label for="checkAdult" class="form-label">Are you over 18 years of age?</label>
+    <input type="checkbox" id="checkAdult " class="form-check-input mb-3" name="checkAdult"
+      [(ngModel)]="model.checkAdult" #checkAdult="ngModel" required />
+    <div [hidden]="checkAdult.valid || checkAdult.pristine" class="alert alert-danger">
+      This field is required.
     </div>
-    <div class="mb-4">
-        <label for="department" class="form-label">Department</label>
-        <select name="department" id="department" class="form-select form-select-sm" [(ngModel)]="model.department"
-            #department="ngModel">
-            <option selected>Open this select menu</option>
-            <option value="marketing">Marketing</option>
-            <option value="sales">Sales</option>
-            <option value="other">Other</option>
-        </select>
+  </div>
+  <div class="mb-4">
+    <label for="department" class="form-label">Department</label>
+    <select name="department" id="department" class="form-select form-select-sm" [(ngModel)]="model.department"
+      #department="ngModel">
+      <option selected>Open this select menu</option>
+      <option value="marketing">Marketing</option>
+      <option value="sales">Sales</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <div class="mb-4">
+    <label for="comment" class="form-label">Comment</label>
+    <textarea class="form-control mb-3" name="comment" id="comment" rows="4" placeholder="Leave a comment..."
+      [(ngModel)]="model.comment" #comment="ngModel" required></textarea>
+    <div [hidden]="comment.valid || comment.pristine" class="alert alert-danger">
+      This field is required.
     </div>
-    <div class="mb-4">
-        <label for="comment" class="form-label">Comment</label>
-        <textarea class="form-control mb-3" name="comment" id="comment" rows="4" placeholder="Leave a comment..."
-            [(ngModel)]="model.comment" #comment="ngModel" required></textarea>
-        <div [hidden]="comment.valid || comment.pristine" class="alert alert-danger">This field is required.</div>
-    </div>
-    <div class="d-grid gap-2 col-4 float-end">
-        <button class="btn btn-info btn-lg" [disabled]="contactForm.invalid">Send</button>
-    </div>
+  </div>
+  <div class="d-grid gap-2 col-4 float-end">
+    <button class="btn btn-info btn-lg" [disabled]="contactForm.invalid">
+      Send
+    </button>
+  </div>
 </form>

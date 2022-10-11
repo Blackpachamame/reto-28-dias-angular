@@ -1,11 +1,20 @@
-import { Component, EventEmitter, Input, Output, ChangeDetectionStrategy, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ChangeDetectionStrategy,
+  ViewChild,
+  ElementRef,
+  AfterViewInit,
+} from '@angular/core';
 import { City } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-form-new-item',
   templateUrl: './form-new-item.component.html',
   styleUrls: ['./form-new-item.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormNewItemComponent implements AfterViewInit {
   @Input() className = 'btn-primary';
@@ -28,7 +37,7 @@ export class FormNewItemComponent implements AfterViewInit {
   onUpdateItem(): void {
     const city: City = {
       _id: this.selection._id,
-      name: this.newItem.nativeElement.value
+      name: this.newItem.nativeElement.value,
     };
     this.updateItemEvent.emit(city);
     this.onClear();

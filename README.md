@@ -126,6 +126,8 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 
 - **API CrudCrud:** El enlace a esta API debe actualizarse diariamente ya que es la versión gratuita. Para esto, vamos a la página [CrudCrud](https://crudcrud.com) y copiamos el nuevo enlace. Luego reemplazamos en enlace anterior en nuestro archivo `environment.ts`.
 
+- **No se muestra ninguna ciudad si solo cargamos una sola, pero si aparece al agregar una segunda: Razón desconocida**
+
 - **Advertencia Molesta:**
 
 `warning NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.`

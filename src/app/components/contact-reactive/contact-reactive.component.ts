@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -6,7 +7,7 @@ import { DataService } from 'src/app/services/data.service';
 @Component({
   selector: 'app-contact-reactive',
   templateUrl: './contact-reactive.component.html',
-  styleUrls: ['./contact-reactive.component.css']
+  styleUrls: ['./contact-reactive.component.css'],
 })
 export class ContactReactiveComponent implements OnInit {
   contactForm!: FormGroup;
@@ -17,16 +18,15 @@ export class ContactReactiveComponent implements OnInit {
   constructor(
     private readonly fb: FormBuilder,
     private readonly route: ActivatedRoute,
-    private readonly dataSvc: DataService) { }
+    private readonly dataSvc: DataService
+  ) { }
 
   ngOnInit(): void {
     this.departments = this.route.snapshot.data['departments'];
 
-    this.route.queryParams.subscribe(
-      (params: Params) => {
-        this.name = params['name'];
-      }
-    )
+    this.route.queryParams.subscribe((params: Params) => {
+      this.name = params['name'];
+    });
     this.contactForm = this.initForm();
   }
 
@@ -41,6 +41,6 @@ export class ContactReactiveComponent implements OnInit {
       checkAdult: ['', [Validators.required]],
       department: [''],
       comment: ['', [Validators.required]],
-    })
+    });
   }
 }

@@ -1,25 +1,26 @@
+<!-- eslint-disable prettier/prettier -->
 <div class="container">
-    <div class="row">
-        <!-- Add City -->
-        <div class="col-md-6 my-3">
-            <app-form-new-item [selection]="selection" (updateItemEvent)="updateCity($event)"
-                (newItemEvent)="addNewCity($event)" [label]="'City'" [className]="'btn-info'">
-            </app-form-new-item>
-        </div>
-        <!-- Filter -->
-        <div class="col-md-6 my-3">
-            <input type="text" class="form-control" placeholder="Filter..." [(ngModel)]="criteria">
-        </div>
-        <hr>
-        <!-- List Cities -->
-        <div class="col-md-8">
-            <ng-container *ngIf="cities.length > 1; else templateEmpty">
-                <app-cities *ngFor="let city of (cities | filter:criteria)" (cityDeleteEvent)="onCityDelete($event)"
-                    (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
-            </ng-container>
-        </div>
-        <!-- Cards Content Project -->
-        <!-- <hr>
+  <div class="row">
+    <!-- Add City -->
+    <div class="col-md-6 my-3">
+      <app-form-new-item [selection]="selection" (updateItemEvent)="updateCity($event)"
+        (newItemEvent)="addNewCity($event)" [label]="'City'" [className]="'btn-info'">
+      </app-form-new-item>
+    </div>
+    <!-- Filter -->
+    <div class="col-md-6 my-3">
+      <input type="text" class="form-control" placeholder="Filter..." [(ngModel)]="criteria" />
+    </div>
+    <hr />
+    <!-- List Cities -->
+    <div class="col-md-8">
+      <ng-container *ngIf="cities.length > 1; else templateEmpty">
+        <app-cities *ngFor="let city of cities | filter: criteria" (cityDeleteEvent)="onCityDelete($event)"
+          (citySelectedEvent)="onCitySelected($event)" [city]="city" [selection]="selection"></app-cities>
+      </ng-container>
+    </div>
+    <!-- Cards Content Project -->
+    <!-- <hr>
         <app-card>
             <div card-header>Soy header 1</div>
             <div card-body>Soy body 1</div>
@@ -34,16 +35,14 @@
             <div card-header>Soy header 3</div>
             <div card-body>Soy body 3</div>
         </app-card> -->
-        <!-- Clear selection -->
-        <div class="col-md-4">
-            <ng-container *ngIf="selection?.name">
-                <p>Your city is: {{selection?.name}}</p>
-                <app-button (click)="onClear()" [label]="'Clear'"></app-button>
-            </ng-container>
-        </div>
-
-        <ng-template #templateEmpty>
-            We dont have cities xd
-        </ng-template>
+    <!-- Clear selection -->
+    <div class="col-md-4">
+      <ng-container *ngIf="selection?.name">
+        <p>Your city is: {{ selection?.name }}</p>
+        <app-button (click)="onClear()" [label]="'Clear'"></app-button>
+      </ng-container>
     </div>
+
+    <ng-template #templateEmpty> We dont have cities xd </ng-template>
+  </div>
 </div>
