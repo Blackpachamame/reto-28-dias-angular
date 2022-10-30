@@ -23,7 +23,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 4. **Interpolación {{ angular }} / On way data binding**
    - Enlazar una propiedad que este en nuestro `component.ts` para leerla en el `component.html`, pero no se puede modificar.
 5. **Enlace de datos bidireccional / On way data binding**
-   - Comunicar componentes _(lo veremos en el reto del día 10)_. Enlazar una propiedad que este en nuestro `component.ts` para tenerla en el `component.html` y modificar su valor simultaneamente.
+   - Comunicar componentes _(lo veremos en el reto del día 10)_. Enlazar una propiedad que este en nuestro `component.ts` para tenerla en el `component.html` y modificar su valor simultáneamente.
 6. **¿Qué es una directiva? ngIf, ngFor**
    - Las directivas son una serie de elementos que aplicaremos a nuestro HTML como si fuera un atributo, con el fin de añadir nuevos comportamientos o estilos al DOM.
    - Las directivas estructurales nos permiten cambiar el comportamiento del DOM.
@@ -37,9 +37,9 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Con @Input podemos modificar el componente padre y ese cambio se lo comunica al componente hijo.
 11. **Decorador @Output**
     - El decorador @Output() en un componente (o directiva) hijo permite que los datos fluyan del hijo al padre.
-    - Cuando usamos el decorador @Input se utiliza `[ ]` para indicarle al componente hijo el valor que se esta pasando, en cambio el decorador @Output utiliza `( )` para capturar el valor emitido y pasárselo al método que tiene el componente padre.
+    - Cuando usamos el decorador @Input se utiliza `[ ]` para indicarle al componente hijo el valor que se está pasando, en cambio el decorador @Output utiliza `( )` para capturar el valor emitido y pasárselo al método que tiene el componente padre.
 12. **Mecanismo de detección de cambio Angular (Change Detection)**
-    - El change detection es el mecanismo o estrategia de detección de cambios que utiliza Angular para saber cuando debe actualizar un componente o toda la vista en caso de que la data haya cambiado.
+    - El change detection es el mecanismo o estrategia de detección de cambios que utiliza Angular para saber cuándo debe actualizar un componente o toda la vista en caso de que la data haya cambiado.
     - Los cambios pueden producirse por:
       - Eventos del mouse
       - Llamadas Ajax
@@ -56,13 +56,13 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 14. **Formularios En Angular**
     - Angular nos brinda dos enfoques distintos a la hora de trabajar con formularios:
       - Template-driven forms: Ideales para crear formularios sencillos.
-      - Reactives forms: Los formularios reactivos son más robustos y escables.
+      - Reactives forms: Los formularios reactivos son más robustos y escalables.
 15. **Configuración de rutas**
     - Se encargan de la navegación de un componente a otro.
     - Pasan parámetros
     - Redireccionan
     - Protegen rutas (guards)
-    - Crear un nuevo componente si exite mas de un módulo: `ng generate component nombreComponente --module app.module` o `ng g c fichero/nombreComponente --m app`.
+    - Crear un nuevo componente si existe más de un módulo: `ng generate component nombreComponente --module app.module` o `ng g c fichero/nombreComponente --m app`.
 16. **Rutas hijas, párametros y QueryParams**
 17. **Guardianes en Angular (Guards)**
     - Nos ayudan a proteger una determinada ruta. Se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no.
@@ -80,7 +80,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
 19. **Lazy loading**
     - Retrasa la carga de un módulo hasta que nuestra aplicación lo necesita.
 20. **forRoot & forChild**
-    - forRoot: Se utiliza para poner todas las rutas en el modulo principal (raiz).
+    - forRoot: Se utiliza para poner todas las rutas en el módulo principal (raiz).
     - forChild: Se utiliza bajo demanda (lazy loading).
 21. **¿Cómo hacer una peticion HTTP en Angular? CRUD**
     - HttpClient es un cliente con los verbos REST, y está basado en Observables.
@@ -90,7 +90,7 @@ Pueden encontrar la lista con los videos de cada día en el siguiente [enlace](h
     - Crear un nuevo interceptor: `ng generate interceptor nombreInterceptor` o `ng g interceptor unFichero/nombreInterceptor` (El aliad "i" es para interface).
 23. **¿Qué es un Observable? Diferencias entre Promesa y Observable**
     - Los Observables son colecciones o secuencias de eventos continuos ordenados en el tiempo.
-    - Programación Reactiva: La es programación orientada al manejo de streams de datos asíncronos y la propagación de los cambio.
+    - Programación Reactiva: La es programación orientada al manejo de streams de datos asíncronos y la propagación de los cambios.
     - Promesa:
       - Se ejecuta inmediatamente
       - Emite un solo valor
